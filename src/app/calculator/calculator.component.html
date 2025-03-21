@@ -1,0 +1,35 @@
+<p>calculator works!</p>
+
+<table id="calcu">
+    <tr> 
+        <td colspan="3"> 
+          <input type="text" id="result" [(ngModel)]="display" readonly> 
+        </td> 
+        <td><input type="button" value="c" (click)="clear()"></td> 
+    </tr> 
+    <tr> 
+        <td><input type="button" value="1" (click)="appendToDisplay('1')"></td> 
+        <td><input type="button" value="2" (click)="appendToDisplay('2')"></td> 
+        <td><input type="button" value="3" (click)="appendToDisplay('3')"></td> 
+        <td><input type="button" value="/" (click)="appendToDisplay('/')"></td> 
+      </tr> 
+      <tr> 
+        <td><input type="button" value="4" (click)="appendToDisplay('4')"></td> 
+        <td><input type="button" value="5" (click)="appendToDisplay('5')"></td> 
+        <td><input type="button" value="6" (click)="appendToDisplay('6')"></td> 
+        <td><input type="button" value="*" (click)="appendToDisplay('*')"></td> 
+      </tr>
+      <tr> 
+        <td><input type="button" value="7" (click)="appendToDisplay('7')"></td> 
+        <td><input type="button" value="8" (click)="appendToDisplay('8')"></td> 
+        <td><input type="button" value="9" (click)="appendToDisplay('9')"></td> 
+        <td><input type="button" value="-" (click)="appendToDisplay('-')"></td> 
+      </tr> 
+      <tr> 
+        <td><input type="button" value="0" (click)="appendToDisplay('0')"></td> 
+        <td><input type="button" value="." (click)="appendToDisplay('.')"></td> 
+        <td><input type="button" value="=" (click)="calculate()"></td> 
+        <td><input type="button" value="+" (click)="appendToDisplay('+')"></td> 
+      </tr> 
+    <p>{{display1}}</p>
+</table>
